@@ -35,8 +35,10 @@ let car = {
     model: 'mitsubishi'
 }
 
-function calculateAge(year) {
-    return 2023 - year
+function calculateAge(car) {
+    const currentYear = new Date().getFullYear();
+
+    return currentYear - car.year
 }
 
 console.log(calculateAge(car.year))
